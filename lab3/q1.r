@@ -18,7 +18,7 @@ total
 #4
 itemF = df[df$Country =="France", ]
 
-#install.packages("data.table")
+install.packages("data.table")
 library(data.table)
 
 item.dt = data.table(itemF)
@@ -35,7 +35,7 @@ df$InvoiceDate <- as.Date(as.character(df$InvoiceDate), "%d-%m-%y")
 
 item11 = df[df$InvoiceDate>"2011-07-01" & df$InvoiceDate<"2011-10-01", ]
 tail(item11$InvoiceDate)
-
+tail(item11$StockCode)
 #avg sale
 item = na.omit(item11)
 total113 = sum(item11$Quantity*item11$UnitPrice)
@@ -51,8 +51,8 @@ item.dt[item.dt$s==item, ]
 df = read.csv("OnlineRetail.csv", header = TRUE)
 df$InvoiceDate <- as.Date(as.character(df$InvoiceDate), "%d-%m-%y")
 item11 = df[df$InvoiceDate>"2011-04-01", ]
-
-
+item11 = df[df$InvoiceDate<"2011-04-31", ]
+mean(item11$UnitPrice*item11$Quantity)
 
 #7
 df = read.csv("OnlineRetail.csv", header = TRUE)
