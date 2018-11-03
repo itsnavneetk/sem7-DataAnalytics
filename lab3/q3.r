@@ -1,6 +1,6 @@
 
 titanic = read.csv(file="titanic.csv", stringsAsFactors = FALSE, header = TRUE)
-tail(titanic.train)
+tail(titanic)
 ageavg = titanic[titanic$Pclass=="3", ]
 ageavg = na.omit(ageavg)
 age = as.numeric(ageavg$Age)

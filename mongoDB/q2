@@ -1,0 +1,10 @@
+mongoimport --db vehicle_reg --collection col --file /home/student1/150911226/mongodb/vehicle_registration.json
+
+
+
+db.v.find({},{STATE:"Assam"},{"Grand Total":1}).pretty();
+
+
+> db.vv.find({"STATES/UTs":"Goa"},{"Grand Total (Transport + Non-Transport)":1}).pretty();
+> db.vv.find({"STATES/UTs":"Goa"},{"TRANSPORT-Buses":1, "TRANSPORT-Taxis":1}).pretty();
+

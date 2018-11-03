@@ -1,4 +1,5 @@
 df = read.csv("wine.csv", header=TRUE)
+df
 str(df)
 install.packages("GGally")
 library(GGally)

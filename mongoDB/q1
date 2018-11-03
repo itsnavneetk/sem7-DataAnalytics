@@ -1,0 +1,11 @@
+1)
+db.wb.find({},{"_id":1,"mjthemecode":1})
+2)
+db.wb.find({"countryname" : {$in :["Republic of India"]}}).pretty()
+3)
+db.wb.find({"sector_namecode" : {$elemMatch :{"name":"Water supply"}}}).pretty()
+
+
+
+> db.v.find({},{"_id":0}).pretty();
+

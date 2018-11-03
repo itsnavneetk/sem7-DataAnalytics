@@ -1,0 +1,11 @@
+ su administrator
+Password: D@l@b
+
+
+student1@MIT-ICT-LAB8-01:~$ su administrator
+Password: 
+administrator@MIT-ICT-LAB8-01:/home/student1$ cd /usr/lib/hive
+administrator@MIT-ICT-LAB8-01:/usr/lib/hive$ cd apache-hive-1.2.1-bin/
+administrator@MIT-ICT-LAB8-01:/usr/lib/hive/apache-hive-1.2.1-bin$ hive
+
+
